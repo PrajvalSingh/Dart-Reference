@@ -3,6 +3,8 @@ class Person {
   bool? isAdult;
   late int age;
 
+  // Use the late keyword to initialize a variable when it is first read, rather than when it's created.
+
   Person(String name, int age) {
     this.name = name;
     this.age = age;
