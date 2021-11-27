@@ -7,4 +7,5 @@ void main() {
   // Set
   Set<String> gfgs = {'Geeks', 'For', 'Geeks'};
   print("A set: ${gfgs}");
+  // will result in: {'Geeks', 'For'}
 }
