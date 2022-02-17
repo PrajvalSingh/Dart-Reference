@@ -7,7 +7,7 @@ class School {
   static void printName() {
     print("This method is a static method, Name of the school is $name.");
   }
-  // printName is a static method and can only access static variables and can be used via            School.printName() without an object
+  // printName is a static method and can only access static variables and can be used via School.printName() without an object
 }
 
 void main() {

@@ -1,19 +1,18 @@
 import "dart:io";
 
-String? prompt(promptText) {
-  stdout.write(promptText);
-  String? answer = stdin.readLineSync();
-  return answer;
+String? input(inputText) {
+  stdout.write(inputText);
+  return stdin.readLineSync();
 }
 
 void main() {
-  final String? color = prompt("Enter a color: ");
-  final String? pluralNoun = prompt("Enter a plural noun: ");
-  final String? name = prompt("Enter a name: ");
+  final String? color = input("Enter a color: ");
+  final String? pluralNoun = input("Enter a plural noun: ");
+  final String? name = input("Enter a name: ");
 
   print("\nRoses are $color.");
-  print("$pluralNoun are blue.");
+  print("$pluralNoun are $color.");
   print("I like $name. \n");
 
-  prompt("Press Enter key to exit. ");
+  input("Press Enter key to exit. ");
 }

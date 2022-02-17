@@ -1,9 +1,9 @@
 import 'madlibs.dart';
 
 void main() {
-  final double num1 = double.parse(prompt("Enter your first number: ")!);
-  final double num2 = double.parse(prompt("Enter your second number: ")!);
-  final String? operator = prompt("Enter your operator (+, -, *, /): ");
+  final double num1 = double.parse(input("Enter your first number: ")!);
+  final double num2 = double.parse(input("Enter your second number: ")!);
+  final String? operator = input("Enter your operator (+, -, *, /): ");
 
   final result;
   const String exitText = "Press Enter key to exit. ";
@@ -30,5 +30,5 @@ void main() {
       print("\nPlease enter an operator!");
   }
 
-  prompt(exitText);
+  input(exitText);
 }
