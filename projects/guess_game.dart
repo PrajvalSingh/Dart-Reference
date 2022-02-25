@@ -2,7 +2,7 @@ import 'dart:io';
 import "dart:math";
 
 void main() {
-  var random = new Random();
+  Random random = Random();
   final int number = random.nextInt(20);
 
   int? userGuess;
